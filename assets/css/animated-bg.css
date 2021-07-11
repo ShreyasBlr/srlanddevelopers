@@ -1,0 +1,45 @@
+/* Cool infinite background scrolling animation.
+ * Twitter: @kootoopas
+ */
+/* Exo thin font from Google. */
+@import url(https://fonts.googleapis.com/css?family=Exo:100);
+/* Background data (Original source: https://subtlepatterns.com/grid-me/) */
+/* Animations */
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 80px 80px;
+  }
+}
+
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 80px 80px;
+  }
+}
+
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 80px 80px;
+  }
+}
+
+@keyframes bg-scrolling {
+  0% {
+    background-position: 80px 80px;
+  }
+}
+
+/* Main styles */
+.animated-bg {
+  /* img size is 50x50 */
+  background: url("../img/bg/bg-rectangle.png") repeat 0 0;
+  -webkit-animation: bg-scrolling-reverse 3s infinite;
+  /* Safari 4+ */
+  /* Fx 5+ */
+  /* Opera 12+ */
+  animation: bg-scrolling-reverse 3s infinite;
+  /* IE 10+ */
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+/*# sourceMappingURL=animated-bg.css.map */
